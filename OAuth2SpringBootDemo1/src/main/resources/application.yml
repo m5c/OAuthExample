@@ -1,0 +1,7 @@
+security:
+  oauth2:
+    client:
+      client-id: timeservice-client
+      client-secret: password-for-timeservice-client
+    resource:
+      token-info-uri: http://localhost:8080/oauth/check_token
