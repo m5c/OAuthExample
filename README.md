@@ -1,4 +1,4 @@
 # OAuthExample
 
 # Communication
-![image](sequencediagram.png)
+![image](Sequencediagram.png)
