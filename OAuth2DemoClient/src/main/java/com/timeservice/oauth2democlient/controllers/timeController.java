@@ -22,9 +22,11 @@ public class timeController {
     public ModelAndView getTime()
     {
         ModelAndView m = new ModelAndView("getTime");
-        System.out.println("MODEL IS " + m.getModel());
+
         return m;
     }
+
+
     @RequestMapping(value = "/showTime", method = RequestMethod.GET)
     public ModelAndView showTime(@RequestParam("code") String code) throws JsonProcessingException
     {
@@ -61,7 +63,11 @@ public class timeController {
         ResponseEntity<String> r = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
         System.out.println("Time is " + r.getBody());
 
-        return null;
+        ModelAndView m = new ModelAndView("displayTime");
+        m.addObject("time", r.getBody());
+
+
+        return m;
 
 
 
