@@ -98,5 +98,5 @@ Below schema illustrates the communication flow for the standard **Authorization
 ## Authors
 
 * Implementation Draft, based
-  on [monolithic OAuth2 Time Service](https://github.com/m5c/OAuth2SpringBootDemo): [Khabiir](https://github.com/khabiirk) ([Original Repo](https://github.com/khabiirk/OAuthExample)), [Maximilian](https://www.cs.mcgill.ca/~mschie3/), ([monolithic OAuth2 Time Service](https://github.com/m5c/OAuth2SpringBootDemo))
+  on [monolithic OAuth2 Time Service](https://github.com/m5c/OAuth2SpringBootDemo): [Khabiir](https://github.com/khabiirk) ([Original Repo](https://github.com/khabiirk/OAuthExample)), [Maximilian](https://www.cs.mcgill.ca/~mschie3/) ([monolithic OAuth2 Time Service](https://github.com/m5c/OAuth2SpringBootDemo))
 * Documentation and Refactoring: [Maximilian](https://www.cs.mcgill.ca/~mschie3/), (This Repo)
