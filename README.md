@@ -48,13 +48,11 @@ The effective OAuth2 communication layout varries, depending on how roles are sp
 
 * In essence, these variants differ in *how the granted authorization* is transferred back from
   Authorization Server to Client.
-* The above process of transferring the authorization is called [**Authorization Grant
-  **](https://datatracker.ietf.org/doc/html/rfc6749#section-1.3) in protocol jargon.
+* The above process of transferring the authorization is called [**Authorization Grant**](https://datatracker.ietf.org/doc/html/rfc6749#section-1.3) in protocol jargon.
 * There are different **Authorization Grant** types, but here we only deal with the standard case:
     * Parties place minimal trust in one another.
     * Parties and are fully separated executables (services).
-* This standard type is called [**Authorization Code Grant
-  **](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1), in protocol jargon.
+* This standard type is called [**Authorization Code Grant**](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1), in protocol jargon.
 
 Below schema illustrates the communication flow for the standard **Authorization Code** type:
 
