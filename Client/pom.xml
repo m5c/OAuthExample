@@ -29,6 +29,13 @@
             <version>3.1.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+
         <!-- Note: The code uses a deprecated annotation: WebSecurityConfigurerAdapter-->
         <!-- This security config is the most recent one that still supports the annotation.-->
         <!-- TODO: add workaround, as explaned in: https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter-->
@@ -43,8 +50,9 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>6.0.9</version>
+            <version>5.3.27</version>
         </dependency>
+
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
