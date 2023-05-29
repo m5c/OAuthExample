@@ -2,7 +2,7 @@
  * @Author: Maximilian Schiedermeier
  * @Date: April 2019
  */
-package eu.kartoffelquadrat.timeservice;
+package github.m5c.resourceserver;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

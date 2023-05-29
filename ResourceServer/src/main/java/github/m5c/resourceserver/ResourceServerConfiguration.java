@@ -1,7 +1,7 @@
 /**
  * Original source: http://websystique.com/spring-security/secure-spring-rest-api-using-oauth2/
  */
-package eu.kartoffelquadrat.timeservice;
+package github.m5c.resourceserver;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

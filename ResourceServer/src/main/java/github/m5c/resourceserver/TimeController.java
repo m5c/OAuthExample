@@ -4,7 +4,7 @@
  * @Author: Maximilian Schiedermeier
  * @Date: April 2019
  */
-package eu.kartoffelquadrat.timeservice;
+package github.m5c.resourceserver;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
