@@ -1,4 +1,4 @@
-package com.timeservice.authorizationserver;
+package github.m5c.authorizationserver;
 
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;

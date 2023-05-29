@@ -1,7 +1,7 @@
 /**
  * Original source: http://websystique.com/spring-security/secure-spring-rest-api-using-oauth2/
  */
-package com.timeservice.authorizationserver;
+package github.m5c.authorizationserver;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;

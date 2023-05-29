@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>mcgill.schieder</groupId>
-    <artifactId>timeservice</artifactId>
-    <version>1.0-BASIC</version>
+    <groupId>github.m5c</groupId>
+    <artifactId>authorizationserver</artifactId>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -43,16 +43,16 @@
             <artifactId>spring-webmvc</artifactId>
             <version>5.2.6.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.9</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>commons-codec</groupId>-->
+<!--            <artifactId>commons-codec</artifactId>-->
+<!--            <version>1.9</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
         <!-- Override default name of generated jars -->
-        <finalName>Timeservice-OAuth2</finalName>
+        <finalName>AuthorizationServer</finalName>
 
         <plugins>
             <plugin>
@@ -60,7 +60,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>eu.kartoffelquadrat.timeservice.TimeServiceLauncher</mainClass>
+                    <mainClass>github.m5c.authorizationserver.AuthorizationServerLauncher</mainClass>
                 </configuration>
                 <executions>
                     <execution>
