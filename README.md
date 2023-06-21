@@ -81,7 +81,7 @@ Below schema illustrates the communication flow for the standard **Authorization
 
 > Note: The above layout is based on the official protocol specifiation. Additional arrows were
 > added to better illustrate the *Request Reply* nature of the underlying HTTP protocol.
-> Steps ```B.1-B.3``` reflect the **Authorization Code** communcation layout.
+> Steps ```B.1-B.3``` reflect the **Authorization Code** communication layout.
 
 ## Further links
 
