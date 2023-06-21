@@ -54,8 +54,7 @@ The effective OAuth2 communication layout varries, depending on how roles are sp
 * There are different **Authorization Grant** types, but here we only deal with the standard case:
     * Parties place minimal trust in one another.
     * Parties are fully separated executables (services).
-* This standard type is called [**Authorization Code Grant
-  **](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1), in protocol jargon.
+* This standard type is called [**Authorization Code Grant**](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1), in protocol jargon.
 
 Below schema illustrates the communication flow for the standard **Authorization Code** type:
 

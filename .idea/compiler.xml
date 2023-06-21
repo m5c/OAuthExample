@@ -6,18 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="client" />
         <module name="authorizationserver" />
         <module name="resourceserver" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="authorizationserver" target="1.8" />
+      <module name="client" target="1.8" />
       <module name="resourceserver" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="authorizationserver" options="-parameters" />
+      <module name="client" options="-parameters" />
       <module name="resourceserver" options="-parameters" />
     </option>
   </component>
