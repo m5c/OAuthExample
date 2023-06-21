@@ -82,6 +82,7 @@ Below schema illustrates the communication flow for the standard **Authorization
 > Note: The above layout is based on the official protocol specifiation. Additional arrows were
 > added to better illustrate the *Request Reply* nature of the underlying HTTP protocol.
 > Steps ```B.1-B.3``` reflect the **Authorization Code** communication layout.
+> Some documentation also create an artificial separation between **Resource Owner** and **User Agent**. It is a contrived splitup, because the latter then represents the browser sided JavaScript executions, interacted with by the **Resource Owner**. The interaction between **Resource Owner** and **User Agent** is then trivial, which is why it was excluded from above figure.
 
 ## Further links
 
