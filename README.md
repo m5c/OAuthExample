@@ -13,8 +13,8 @@ party service, on behalf of their owner. The purpose is to strip the need for cr
 means of impersonation via cryptographic tokens.
 The key entities in any OAuth2 interplay are three RESTful services:
 
-* A **Resource Server**: It offers a resource, belonging by a *Resource Owner*. The latter is
-  usually a biological or legal person.
+* A **Resource Server**: It offers a resource, belonging to a *Resource Owner*. The latter is
+  usually a biological or legal person, not an actually service.
 * A **Client**: It needs to access a protected resource of the *Resource Server*, on behalf of the
   *Resource Owner*.
 * An **Authorization Server**: It is the center part of the OAuth2 protocol and provides secure
@@ -36,8 +36,9 @@ This repository reflects the [standard protocol entities](#about) as follows:
   resource owners) have their proper time resource, which upon access tells the time in their
   customized format.
 * A newly coded [Time Proxy Service](Client) as OAuth2 **Client**, which attempts to access the
-  TimeService on behalf of the user and therefore needs to be delegated permission, using the OAuth2
-  Protocol.
+  TimeService on behalf of the user and therefore needs to be granted access. Permission to access the protected time resource is obtained, using the OAuth2
+  Protocol. This component likewise contains a minimal Web Frontent, to allow for interaction with
+  the **Resource Owner** by means of a interpreting user-agent.
 * An (almost) off-the-shelf [Authorization Service](AuthorizationServer) which keeps track of users,
   services, granted access and tokens, to allow for a secured resource access following the OAuth2
   dance.
@@ -47,12 +48,14 @@ This repository reflects the [standard protocol entities](#about) as follows:
 The effective OAuth2 communication layout varries, depending on how roles are sperated or fused:
 
 * In essence, these variants differ in *how the granted authorization* is transferred back from
-  Authorization Server to Client.
-* The above process of transferring the authorization is called [**Authorization Grant**](https://datatracker.ietf.org/doc/html/rfc6749#section-1.3) in protocol jargon.
+  **Authorization Server** to **Client**.
+* The above process of transferring the authorization is called [**Authorization Grant
+  **](https://datatracker.ietf.org/doc/html/rfc6749#section-1.3) in protocol jargon.
 * There are different **Authorization Grant** types, but here we only deal with the standard case:
     * Parties place minimal trust in one another.
-    * Parties and are fully separated executables (services).
-* This standard type is called [**Authorization Code Grant**](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1), in protocol jargon.
+    * Parties are fully separated executables (services).
+* This standard type is called [**Authorization Code Grant
+  **](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1), in protocol jargon.
 
 Below schema illustrates the communication flow for the standard **Authorization Code** type:
 
