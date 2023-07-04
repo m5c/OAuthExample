@@ -7,7 +7,8 @@
 <body>
 <h3 style="color: red;">Get Time</h3>
 
-<div id="getEmployees">
+<%--pretty sure khabiir copied this from somewhere, but i cannot find the original --%>
+<div>
     <form:form action="http://localhost:8080/oauth/authorize"
                method="post" modelAttribute="emp">
     <p>

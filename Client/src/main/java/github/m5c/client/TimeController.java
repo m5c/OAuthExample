@@ -17,15 +17,30 @@ import java.util.Arrays;
 @Controller
 public class TimeController {
 
-  @RequestMapping(value = "/time", method = RequestMethod.GET)
+
+  /**
+   * This MVC endpoint delivers a JSP rendered page with an HTML form. Using the form the user agent
+   * can request proxy access to a protected time resource, by provision of a client id.
+   *
+   * @return HTML form to request access on protected time resource, for specific client id.
+   */
+  @RequestMapping(value = "/timeproxysetup", method = RequestMethod.GET)
   public ModelAndView getTime() {
-    ModelAndView modelAndView = new ModelAndView("getTime");
+    ModelAndView modelAndView = new ModelAndView("requestProxyAccess");
 
     return modelAndView;
   }
 
+  /**
+   * This is a non REST access point. Using the ```/showTime``` endpoint, the client application
+   * generates the getTime webpage, which acts ass proxy to the protected time resource of the
+   * Resource Server.
+   *
+   * @return rendered JSP page for proxy time access.
+   */
 
-  @RequestMapping(value = "/showTime", method = RequestMethod.GET)
+  // TODO: Clean up code, document what happens here.
+  @RequestMapping(value = "/time", method = RequestMethod.GET)
   public ModelAndView showTime(@RequestParam("code") String code) throws JsonProcessingException {
     ResponseEntity<String> response = null;
     System.out.println("Authorization Code------" + code);
@@ -61,7 +76,7 @@ public class TimeController {
     ResponseEntity<String> r = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
     System.out.println("Time is " + r.getBody());
 
-    ModelAndView modelAndView = new ModelAndView("displayTime");
+    ModelAndView modelAndView = new ModelAndView("showProxyTime");
     modelAndView.addObject("time", r.getBody());
 
     return modelAndView;
